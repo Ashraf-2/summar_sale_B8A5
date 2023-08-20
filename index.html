@@ -120,7 +120,7 @@
                 <!-- specific 3 cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <!-- fourth card -->
-                    <div class="card rounded-lg bg-base-100 shadow-md">
+                    <div onclick="setProductName_Fourth()" class="card rounded-lg bg-base-100 shadow-md">
                         <figure class="m-2 bg-gray-200">
                             <img src="./images/prod4.png" alt="prod-4" class="rounded-xl my-6" />
                         </figure>
@@ -132,13 +132,13 @@
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-yellow-400" />
                                 <input type="radio" name="rating-4" class="mask mask-star-2 bg-yellow-400" />
                             </div>
-                            <h2 class="card-title">Sports Back Cap</h2>
+                            <h2 id="fourth-card-title" class="card-title">Sports Back Cap</h2>
                             <p>49.00 TK</p>
 
                         </div>
                     </div>
                     <!-- fifth card -->
-                    <div class="card rounded-lg bg-base-100 shadow-md">
+                    <div onclick="setProductName_Fifth()" class="card rounded-lg bg-base-100 shadow-md">
                         <figure class="m-2 bg-gray-200">
                             <img src="./images/prod5.png" alt="prod-2" class="rounded-xl my-6 " />
                         </figure>
@@ -150,13 +150,13 @@
                                 <input type="radio" name="rating-5" class="mask mask-star-2 bg-yellow-400" />
                                 <input type="radio" name="rating-5" class="mask mask-star-2 bg-yellow-400" />
                             </div>
-                            <h2 class="card-title">Full Jersey Set</h2>
+                            <h2 id="fifth-card-title" class="card-title">Full Jersey Set</h2>
                             <p>69.00 TK</p>
 
                         </div>
                     </div>
                     <!-- sixth card -->
-                    <div id="sixth-card" class="card rounded-lg bg-base-100 shadow-md">
+                    <div onclick="setProductName_Sixth()" class="card rounded-lg bg-base-100 shadow-md">
                         <figure class="m-2 bg-gray-200">
                             <img src="./images/prod6.png" alt="prod-3" class="rounded-xl my-6" />
                         </figure>
@@ -168,9 +168,8 @@
                                 <input type="radio" name="rating-6" class="mask mask-star-2 bg-yellow-400" />
                                 <input type="radio" name="rating-6" class="mask mask-star-2 bg-yellow-400" />
                             </div>
-                            <h2 class="card-title">Sports cates</h2>
+                            <h2 id="sixth-card-title" class="card-title">Sports cates</h2>
                             <p>159.00 TK</p>
-
                         </div>
                     </div>
                 </div>
@@ -189,9 +188,10 @@
                 <button class="btn bg-pink-500 py-2 px-6 rounded-md font-semibold text-white">Apply</button>
             </div>
             <!-- payment section area -->
-            <div>
-                <ol>
+            <div class="bg-pink-200 px-8 py-2 mt-5 md:mt-20 lg:mt-20 rounded-lg">
+                <ol class="list-decimal" type="1" id="ol-id">
                     <!-- <li></li> -->
+                    <!-- <li>hello</li> -->
                 </ol>
 
             </div>
@@ -199,6 +199,8 @@
 
     </main>
 
+
+    <script src="./scripts/itemCart.js"></script>
 </body>
 
 </html>
