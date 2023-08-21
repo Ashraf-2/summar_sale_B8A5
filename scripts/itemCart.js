@@ -190,6 +190,7 @@ function reduceby20() {
         // const PrevdiscountValue = parseFloat(PrevdiscountText);
 
         let discoutedAmount = newTotalValue * 0.20;
+        discoutedAmount = discoutedAmount.toFixed(2);
         let total_Value = 0;
         if (discoutedAmount > 0) {
             // minus the discout from the total price
