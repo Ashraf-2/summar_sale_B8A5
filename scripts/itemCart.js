@@ -75,25 +75,14 @@ function setProductName_Fifth() {
 }
 //sixth
 function setProductName_Sixth() {
-    // console.log('clicked');
-    //1. collect the list parent
-    //2. collect the name of the card
+
     const perameter6 = 'sixth-card-title';
     const CardTitlleName6 = ElementName(perameter6);          //(cardId)
 
-    // console.log('returned->',CardTitlleName);
-    // console.log(cardName);
-    //3. set the card name in the list
 
-    /*
-    const LiElement = document.createElement('li');
-    LiElement.innerText = cardName;
-    listElementParent.appendChild(LiElement);
-    */
 
     SetLiText(CardTitlleName6);
-    //4. collect the price of the card
-    //5. calculate the previous price and current price and put the total price.
+
 
     //pricing area
     const prevTotal_Price = totalPrice('sixth-price')
@@ -103,8 +92,7 @@ function setProductName_Sixth() {
 
 //phase-2
 function ElementName(pera) {
-    // console.log('2nd function inside of');
-    // const cardTitleElement = document.getElementById('sixth-card-title');
+
     const cardTitleElement = document.getElementById(pera);
     const cardTitle = cardTitleElement.innerText;
     // console.log('returned on function 2->',cardTitle);
@@ -116,6 +104,7 @@ function SetLiText(cardTitleParameter) {
     const listParent = document.getElementById('ol-id');
     const LiElement = document.createElement('li');
     LiElement.innerText = cardTitleParameter;
+    LiElement.setAttribute('class', 'lists');
 
     listParent.appendChild(LiElement);
 }
@@ -205,4 +194,16 @@ function reduceby20() {
         // const prevTotal_Text = totalElement.innerText;
         // const prevTotal_Value = parseFloat(prevTotal_Text);
     }
+}
+
+function homeClick() {
+    const liItems = document.getElementsByClassName('lists');
+    console.log(liItems);
+    liItems.removeChild
+    for (const list of liItems) {
+        console.log(list);
+        liItems.removeChild();
+    }
+
+
 }
