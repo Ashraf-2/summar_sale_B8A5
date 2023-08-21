@@ -189,9 +189,11 @@
             <!-- coupon area -->
             <div class=" bg-white px-2 py-2 mt-5 md:mt-20 lg:mt-20 rounded-lg">
                 <p class="text-xl font-semibold">Have Coupon?</p>
+                <!-- coupon field -->
                 <input type="text" class="p-2 rounded-sm w-3/5  border-x border-y" name="couple-field" id="couple-field"
                     placeholder="Coupon code">
-                <button class="btn bg-pink-500 py-2 px-6 rounded-md font-semibold text-white">Apply</button>
+                <!-- apply btn -->
+                <button onclick="reduceby20()" disabled id="apply-btn" class="btn bg-pink-500 py-2 px-6 rounded-md font-semibold normal-case text-white">Apply</button>
             </div>
             <!-- payment section area -->
             <div class="bg-pink-200 px-8 py-2 mt-5 md:mt-20 lg:mt-20 rounded-lg">
@@ -201,14 +203,14 @@
                 </ol>
                 <div class="border-b-2 my-3 border-gray-400"></div>
                 <div>
-                    <h3>Total Price: <span id="total-price" class="text-gray-400">00</span>Tk</h3>
-                    <h3>Discount: <span id="discount"  class="text-gray-400">00</span>Tk</h3>
-                    <h3>Total: <span id="total"  class="text-gray-400">00</span>Tk</h3>
+                    <h3 class="font-semibold"> Total Price: <span id="total-price" class="text-gray-400">00</span>Tk</h3>
+                    <h3 class="font-semibold"> Discount: <span id="discount" class="text-gray-400">00</span>Tk</h3>
+                    <h3 class="font-semibold"> Total: <span id="total"  class="text-gray-400">00</span>Tk</h3>
                     <div class="border-b-2 my-3 border-gray-400"></div>
                 </div>
             </div>
-            
-            <div><button class="btn bg-pink-500 w-full mx-auto">Make Purchase</button></div>
+            <!-- purchase btn -->
+            <div><button disabled id="purchase-btn" class="btn bg-pink-500 w-full mx-auto text-white normal-case">Make Purchase</button></div>
 
         </div>
 
