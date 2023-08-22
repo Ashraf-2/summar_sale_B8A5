@@ -46,31 +46,9 @@ function setProductName_Fifth() {
     const CardTitlleName5 = ElementName(perameter5);
     SetLiText(CardTitlleName5);
 
-    //pricing prod
-    // const priceElement = document.getElementById(); //'fifth-price';
-    // const PriceText = priceElement.innerText;
-    // const priceValue = parseFloat(PriceText);
-    // console.log('fifth price value : ',priceValue);
-    // console.log(typeof(priceValue));
-
     const prevTotal_Price = totalPrice('fifth-price')
 
-
-
-    // //total side
-    // const prevTotalElement =  document.getElementById('total-price');
-    // const prevTotalText = prevTotalElement.innerText;
-    // const prevTotalValue = parseFloat(prevTotalText);
-    // console.log('prev total value: ',prevTotalValue);
-    // console.log(typeof(prevTotalValue));
-
     const prevTotalValue = toatlSide('total-price', prevTotal_Price);
-
-    // const newTotalValue = prevTotalValue + prevTotal_Price;      //prevTotalValue
-    // console.log(newTotalValue);
-    // console.log('new total value: ', newTotalValue);
-    // prevTotalElement.innerText = newTotalValue; //newTotalValue
-    // console.log(prevTotalElement);
 
 }
 //sixth
@@ -79,10 +57,7 @@ function setProductName_Sixth() {
     const perameter6 = 'sixth-card-title';
     const CardTitlleName6 = ElementName(perameter6);          //(cardId)
 
-
-
     SetLiText(CardTitlleName6);
-
 
     //pricing area
     const prevTotal_Price = totalPrice('sixth-price')
@@ -114,8 +89,7 @@ function totalPrice(peraPriceTotal) {
     const priceElement = document.getElementById(peraPriceTotal); //'fifth-price';
     const PriceText = priceElement.innerText;
     const priceValue = parseFloat(PriceText);
-    // console.log('fifth price value : ',priceValue);
-    // console.log(typeof(priceValue));
+
     return priceValue;
 }
 let newTotalValue = 0;
@@ -125,9 +99,6 @@ function toatlSide(TotalID, prevTotal_Price_Pera) {
     const prevTotal_PriceElement = document.getElementById(TotalID);
     const prevTotal_PriceText = prevTotal_PriceElement.innerText;
     const prevTotal_PriceValue = parseFloat(prevTotal_PriceText);
-    // console.log('prev total value: ',prevTotalValue);
-    // console.log(typeof(prevTotalValue));
-    // return prevTotalValue;
 
     newTotalValue = parseFloat(prevTotal_PriceValue + prevTotal_Price_Pera);
     newTotalValue = newTotalValue.toFixed(2);
@@ -175,8 +146,6 @@ function reduceby20() {
 
     if (text === 'SELL200') {
         const discountElement = document.getElementById('discount');
-        // const PrevdiscountText = discountElement.innerText;
-        // const PrevdiscountValue = parseFloat(PrevdiscountText);
 
         let discoutedAmount = newTotalValue * 0.20;
         discoutedAmount = discoutedAmount.toFixed(2);
