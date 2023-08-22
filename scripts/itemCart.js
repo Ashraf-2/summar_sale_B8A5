@@ -113,7 +113,7 @@ function toatlSide(TotalID, prevTotal_Price_Pera) {
     const PrevdiscountText = discountElement.innerText;
     const PrevdiscountValue = parseFloat(PrevdiscountText);
     // console.log(PrevdiscountValue);
-    console.log('total price: ', newTotalValue);
+    // console.log('total price: ', newTotalValue);
 
 
     //now total paid section
@@ -138,7 +138,7 @@ let text;
 document.getElementById('couple-field').addEventListener('keyup', function (event) {
     //1. coupon text collection from input
     text = event.target.value;
-    console.log('text_>', text);
+    // console.log('text_>', text);
 })
 
 function reduceby20() {
