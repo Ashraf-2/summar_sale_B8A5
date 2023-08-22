@@ -164,7 +164,7 @@ function reduceby20() {
         // const prevTotal_Value = parseFloat(prevTotal_Text);
     }
 }
-
+//this is hor modal-> to vanish all the carted product
 function homeClick() {
     const liItems = document.getElementsByClassName('lists');
     console.log(liItems);
